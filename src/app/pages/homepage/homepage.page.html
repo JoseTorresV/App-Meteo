@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Homepage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-item *ngFor="let c of componenti" 
+                  [routerLink]="c.redirectTo" detail>
+  
+          <ion-icon slot="start" [name]="c.icon"></ion-icon> <!-- metto name tra quadre perchè così può ricevere i valori di componenti che si trova all'interno di inizio.page.ts -->
+          <ion-label>{{ c.name }}</ion-label>
+  
+        </ion-item>
+  
+    </ion-list>
+
+</ion-content>

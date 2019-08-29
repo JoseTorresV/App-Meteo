@@ -1,0 +1,78 @@
+
+<app-header titolo="meteo"></app-header>
+
+<ion-content padding>
+
+            <ion-card mode="ios" 
+                      color="primary"
+                      *ngIf="weather">
+
+                <ion-card-header>
+                    <ion-card-subtitle>{{weather.name}}</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-header>
+                    <ion-card-subtitle>{{weather.main.temp}}</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-header>
+                        <ion-card-subtitle>{{weather.coord.lon}}</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-header>
+                        <ion-card-subtitle>{{weather.coord.lat}}</ion-card-subtitle>
+                </ion-card-header>
+                    
+                <ion-card-header>
+                        <ion-card-subtitle>{{weather.main.humidity}}</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-header>
+                        <ion-card-subtitle>{{weather.main.pressure}}</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-header>
+                        <ion-card-subtitle>{{weather.weather[0].description}}</ion-card-subtitle>
+                </ion-card-header>
+        
+            </ion-card>
+        
+            <ion-card>
+        
+              <ion-img src="/assets/shapes.svg"></ion-img>
+        
+            </ion-card>
+
+            <form #formulario="ngForm" (ngSubmit)="submitLocation(cityName, countryCode)">
+
+                    <ion-list>
+                
+                      <ion-item>
+                
+                          <ion-label position="floating">City</ion-label>
+                          <ion-input type="text"
+                                     name="name"
+                                     #cityName>
+                          </ion-input>
+                
+                      </ion-item>
+                
+                      <ion-item>
+                
+                          <ion-label position="floating">Country Code</ion-label>
+                          <ion-input type="text"
+                                     name="pippo"
+                                     #countryCode>
+                          </ion-input>
+                
+                      </ion-item>
+                
+                    </ion-list>
+                
+                    <ion-button expand="full" type="submit">
+                      Send
+                    </ion-button>
+                
+                </form>
+
+</ion-content>
