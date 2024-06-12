@@ -1613,21 +1613,23 @@
     tslib "^2.0.3"
     ws "^7.0.1"
 
-"@ionic/angular@^5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-5.9.4.tgz#f760065335d02daf940cc8452d9ad7b7a223914f"
-  integrity sha512-U/85FePF48VaZXTudTwpVXDqhGmYfarl/7vki7a4umnIORnWtHqD2/pXsqqZ/O1EcbALwULYIeVXAfkFpPd2wQ==
+"@ionic/angular@6":
+  version "6.7.5"
+  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.7.5.tgz#43f5c9d19ebce8d9630bfa6e81653ef9d8ae3896"
+  integrity sha512-nV8HP7RedjYkIAT8nVr5ifHNT0D3XzA74RPG3/WCCFJKunERNJ9SBiNkCTWhUpSkqsYYwEB4+SOOHz+R5NLk/w==
   dependencies:
-    "@ionic/core" "5.9.4"
-    tslib "^1.9.3"
+    "@ionic/core" "6.7.5"
+    ionicons "^6.1.3"
+    jsonc-parser "^3.0.0"
+    tslib "^2.0.0"
 
-"@ionic/core@5.9.4":
-  version "5.9.4"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-5.9.4.tgz#6fe39099bc102322428671154b613e0eded72245"
-  integrity sha512-Ngz9yVT6fIiGdSxxBer8uJxP4w6PasvohYpLxhtMgYiWnyIu0vZra2ui3HrYukCzUo5/SbNPiUr1l7cj1E+7qw==
+"@ionic/core@6.7.5":
+  version "6.7.5"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.7.5.tgz#97f2942fca3c88191d4e1081082477fbcb864174"
+  integrity sha512-zRkRn+h/Vs3xt/EVgBdShMKDyeGOM4RU31NPF2icfu3CUTH+VrMV569MUnNjYvd1Lu2xK90pYy4TaicSWmC1Pw==
   dependencies:
-    "@stencil/core" "^2.4.0"
-    ionicons "^5.5.3"
+    "@stencil/core" "^2.18.0"
+    ionicons "^6.1.3"
     tslib "^2.1.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -1928,15 +1930,10 @@
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.2.tgz#821f8442f4175d8f0467b9daf26e3a18e2d02af2"
   integrity sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==
 
-"@stencil/core@^2.4.0":
+"@stencil/core@^2.18.0":
   version "2.22.3"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.22.3.tgz#83987e20bba855c450f6d6780e3a20192603f13f"
   integrity sha512-kmVA0M/HojwsfkeHsifvHVIYe4l5tin7J5+DLgtl8h6WWfiMClND5K3ifCXXI2ETDNKiEk21p6jql3Fx9o2rng==
-
-"@stencil/core@~2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.10.0.tgz#acf44b9ae6578a20f0d09bf94296e833beadc885"
-  integrity sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==
 
 "@tootallnate/once@2":
   version "2.0.0"
@@ -4903,12 +4900,12 @@ invert-kv@^2.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
 
-ionicons@^5.5.3:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-5.5.4.tgz#5fef0c44038a630f5bb5f9a7dc83ec158bab95b1"
-  integrity sha512-3ph8X9my3inhabWEZ7N0XRA0MnnNQ1v9a602mLNgWsIXnxE9G5BybIZ/pws/OZZ/hoNlvSjk801N03yL9/FNgQ==
+ionicons@^6.1.3:
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-6.1.3.tgz#32ce7dd0ed00bb71a9df612501745ad0d2e5d2df"
+  integrity sha512-ptzz38dd/Yq+PgjhXegh7yhb/SLIk1bvL9vQDtLv1aoSc7alO6mX2DIMgcKYzt9vrNWkRu1f9Jr78zIFFyOXqw==
   dependencies:
-    "@stencil/core" "~2.10.0"
+    "@stencil/core" "^2.18.0"
 
 ip-address@^9.0.5:
   version "9.0.5"
@@ -5320,7 +5317,7 @@ jsonc-parser@3.2.0:
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.0.tgz#31ff3f4c2b9793f89c67212627c51c6394f88e76"
   integrity sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==
 
-jsonc-parser@3.2.1:
+jsonc-parser@3.2.1, jsonc-parser@^3.0.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.2.1.tgz#031904571ccf929d7670ee8c547545081cb37f1a"
   integrity sha512-AilxAyFOAcK5wA1+LeaySVBrHsGQvUFCDWXKpZjzaL0PqW+xfBOttn8GNtWKFWqneyMZj41MWF9Kl6iPWLwgOA==
@@ -7828,12 +7825,12 @@ tslib@2.6.2:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.3.tgz#0438f810ad7a9edcde7a241c3d80db693c8cbfe0"
   integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==
